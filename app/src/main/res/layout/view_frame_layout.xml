@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- FrameLayout xếp chồng các thành phần con theo thứ tự được thêm vào -->
+    <!-- Thành phần con cuối cùng được thêm vào sẽ được đặt lên đỉnh (trên cùng) của các thành phần con khác   -->
+    <!--  Điều này có nghĩa là các thành phần con trước đó sẽ bị che phủ bởi thành phần con mới nhất -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:text="Button1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button1" />
+
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
