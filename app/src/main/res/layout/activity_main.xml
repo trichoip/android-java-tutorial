@@ -32,6 +32,43 @@
             android:layout_height="wrap_content"
             android:text="Fragment" />
 
+        <Button
+            android:id="@+id/btn_backstack_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Backstack Fragment" />
+
+
+        <Button
+            android:id="@+id/button_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ListView" />
+
+
+        <Button
+            android:id="@+id/button_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RecyclerView" />
+
+        <Button
+            android:id="@+id/button_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Animation" />
+
+        <Button
+            android:id="@+id/button_webapi_json"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WebApiJson (api github)" />
+
+        <Button
+            android:id="@+id/button_shared_preferences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shared Preferences" />
 
         <Button
             android:layout_width="match_parent"

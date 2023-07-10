@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <!-- TODO: permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -27,9 +46,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".intent.FirstScreenActivity" />
-        <activity android:name=".intent.SecondScreenActivity" />
+        <activity android:name=".Intent.FirstScreenActivity" />
+        <activity android:name=".Intent.SecondScreenActivity" />
         <activity android:name=".fragment.FragmentActivity" />
+        <activity
+            android:name=".fragment.BackstackFragmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListView.ListViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerView.RecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Animation.AnimationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WebApiJson.WebApiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SharedPreferences.SharedPreferenceActivity"
+            android:exported="false" />
 
         <!-- TODO: service -->
         <service android:name=".service.ServiceExample" />

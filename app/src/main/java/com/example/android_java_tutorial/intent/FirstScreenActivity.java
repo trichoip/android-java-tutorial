@@ -1,4 +1,4 @@
-package com.example.android_java_tutorial.intent;
+package com.example.android_java_tutorial.Intent;
 
 import android.content.Intent;
 import android.net.Uri;

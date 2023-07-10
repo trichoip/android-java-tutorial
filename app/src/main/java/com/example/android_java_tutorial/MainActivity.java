@@ -1,5 +1,6 @@
 package com.example.android_java_tutorial;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -8,8 +9,14 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.android_java_tutorial.Animation.AnimationActivity;
+import com.example.android_java_tutorial.Intent.FirstScreenActivity;
+import com.example.android_java_tutorial.ListView.ListViewActivity;
+import com.example.android_java_tutorial.RecyclerView.RecyclerViewActivity;
+import com.example.android_java_tutorial.SharedPreferences.SharedPreferenceActivity;
+import com.example.android_java_tutorial.WebApiJson.WebApiActivity;
+import com.example.android_java_tutorial.fragment.BackstackFragmentActivity;
 import com.example.android_java_tutorial.fragment.FragmentActivity;
-import com.example.android_java_tutorial.intent.FirstScreenActivity;
 import com.example.android_java_tutorial.service.ServiceExample;
 
 public class MainActivity extends AppCompatActivity {
@@ -68,14 +75,57 @@ public class MainActivity extends AppCompatActivity {
 
         // TODO: Fragment
         findViewById(R.id.btn_fragment).setOnClickListener(v -> {
-            Intent intentFragment = new Intent(MainActivity.this, FragmentActivity.class);
-            startActivity(intentFragment);
+            Intent intent = new Intent(MainActivity.this, FragmentActivity.class);
+            startActivity(intent);
+            // finish();
+        });
+
+
+        // TODO: Backstack Fragment
+        findViewById(R.id.btn_backstack_fragment).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, BackstackFragmentActivity.class);
+            startActivity(intent);
+            // finish();
+        });
+
+        // TODO: ListView
+        findViewById(R.id.button_listview).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ListViewActivity.class);
+            startActivity(intent);
+            // finish();
+        });
+
+        // TODO: RecyclerView
+        findViewById(R.id.button_recyclerview).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+            startActivity(intent);
+            // finish();
+        });
+
+        // TODO: Animation
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+        findViewById(R.id.button_animation).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, AnimationActivity.class);
+            startActivity(intent);
+            // finish();
+        });
+
+        // TODO: WebApi json
+        findViewById(R.id.button_webapi_json).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, WebApiActivity.class);
+            startActivity(intent);
+            // finish();
+        });
+
+        // TODO: Shared Preferences
+        findViewById(R.id.button_shared_preferences).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SharedPreferenceActivity.class);
+            startActivity(intent);
             // finish();
         });
 
         // value có thể là String, int, boolean, double, float, ...Object class
         intentService.putExtra("key", "value");
-
 
 
     }
