@@ -32,9 +32,12 @@
         android:theme="@style/Theme.Android_Java_Tutorial"
         tools:targetApi="31">
 
-        <!-- * android:exported="true"  -> để chỉ định liệu một thành phần (như Activity, Service hoặc BroadcastReceiver) có thể được gọi từ các ứng dụng khác hay không. -->
-        <!-- * lưu ý: sử dụng Activity nào thì phải cấu hình vào  manifest nếu không cấu hình mà call thì bị báo lỗi -->
-        <!-- * sử dụng Service nào thì phải cấu hình vào  manifest nếu không cấu hình mà call Service thì app vẫn chạy bth nhưng service sẽ không khởi tạo và không sử dụng được Service đó -->
+        <!-- * android:exported="true"  -> để chỉ định liệu một thành phần (như Activity, Service
+        hoặc BroadcastReceiver) có thể được gọi từ các ứng dụng khác hay không. -->
+        <!-- * lưu ý: sử dụng Activity nào thì phải cấu hình vào  manifest nếu không cấu hình mà call
+        thì bị báo lỗi -->
+        <!-- * sử dụng Service nào thì phải cấu hình vào  manifest nếu không cấu hình mà call Service
+        thì app vẫn chạy bth nhưng service sẽ không khởi tạo và không sử dụng được Service đó -->
         <!-- * class extent Fragment thì không cần khai báo trong manifest -->
         <!-- TODO: active -->
         <activity
@@ -53,7 +56,7 @@
             android:name=".fragment.BackstackFragmentActivity"
             android:exported="false" />
         <activity
-            android:name=".ListView.ListViewActivity"
+            android:name=".listview.ListViewActivity"
             android:exported="false" />
         <activity
             android:name=".RecyclerView.RecyclerViewActivity"
@@ -67,7 +70,9 @@
         <activity
             android:name=".SharedPreferences.SharedPreferenceActivity"
             android:exported="false" />
-
+        <activity
+            android:name=".SQLite.SQLiteActivity"
+            android:exported="false" />
         <!-- TODO: service -->
         <service android:name=".service.ServiceExample" />
     </application>

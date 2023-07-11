@@ -1,4 +1,4 @@
-package com.example.android_java_tutorial.ListView;
+package com.example.android_java_tutorial.listview;
 
 import android.app.Activity;
 import android.view.LayoutInflater;

@@ -11,12 +11,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.android_java_tutorial.Animation.AnimationActivity;
 import com.example.android_java_tutorial.Intent.FirstScreenActivity;
-import com.example.android_java_tutorial.ListView.ListViewActivity;
 import com.example.android_java_tutorial.RecyclerView.RecyclerViewActivity;
+import com.example.android_java_tutorial.SQLite.SQLiteActivity;
 import com.example.android_java_tutorial.SharedPreferences.SharedPreferenceActivity;
 import com.example.android_java_tutorial.WebApiJson.WebApiActivity;
 import com.example.android_java_tutorial.fragment.BackstackFragmentActivity;
 import com.example.android_java_tutorial.fragment.FragmentActivity;
+import com.example.android_java_tutorial.listview.ListViewActivity;
 import com.example.android_java_tutorial.service.ServiceExample;
 
 public class MainActivity extends AppCompatActivity {
@@ -88,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
             // finish();
         });
 
-        // TODO: ListView
+        // TODO: listview
         findViewById(R.id.button_listview).setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ListViewActivity.class);
             startActivity(intent);
@@ -120,6 +121,13 @@ public class MainActivity extends AppCompatActivity {
         // TODO: Shared Preferences
         findViewById(R.id.button_shared_preferences).setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, SharedPreferenceActivity.class);
+            startActivity(intent);
+            // finish();
+        });
+
+        // TODO: SQLite
+        findViewById(R.id.button_sqlite).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SQLiteActivity.class);
             startActivity(intent);
             // finish();
         });
